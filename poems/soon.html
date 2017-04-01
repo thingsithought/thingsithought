@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8"/>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="keywords" content="lauren holden, things i thought when my thoughts thought without me, poetry, poems, visual poetry, writing, crative writing, graphic design, collage, collage graphic design, mental health, anxiety, depression, mood disorders, the woodpecker, words slip, virus, spaghetti, right angles, allies, soon, studies in visual poetry, visual rhetoric, verbal rhetoric, rhetorical devices, verbal, visual, thesis, project, capstone, YSDN, design, York University, Sheridan College, thesis project, capstone thesis, James March, Jamie March, interactivity, motion, animation, gifs, creative writing, toronto, canada, anthology, poetry anthology, anthology of self indulgence, growing anthology">
+    
+    <title>soon</title>
+
+    <link rel="shortcut icon" type="image/ico" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="https://use.typekit.net/rjg0wfl.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    
+</head>
+
+<body class="wow fadeInbody" style="height: 14000px;">
+    <audio autoplay loop>
+      <source src="../sound/soon.mp3" type="audio/mpeg">
+        Uh oh! Looks like your browser doesn't support audio.
+    </audio>
+    
+    <div class="button_container" id="toggle">
+        <div class="wow fadeIn center circle" style="margin-top: 10%;"></div>
+    </div>
+    <div class="overlay" id="overlay">
+    <div class="container-nav">
+            <div class="row" style="margin-top:9%;">
+                <div class="two columns"><nav class="overlay-menu">
+                    <ul>
+                      <li ><a href="../index.html">thingsithought</a></li>
+                      <li><a href="../poems/woodpecker.html">the woodpecker</a></li>
+                      <li><a href="../poems/wordsslip.html">reality</a></li>
+                      <li><a href="../poems/intimacy.html">intimacy</a></li>
+                      <li><a href="../poems/extraterrestrial3.html">extraterrestrial</a></li>
+                      <li><a href="../poems/breakfast.html">breakfast</a></li>
+                      <li><a href="../poems/virus.html">virus</a></li>  
+                      <li><a href="../poems/rightangles.html">right angles</a></li>
+                      <li><a href="../poems/privilege.html">privilege</a></li>
+                      <li><a href="../poems/spaghetti.html">spaghetti</a></li>
+                      <li><a href="../poems/allies.html">allies</a></li>   
+                      <li><a id="fade" href="../poems/soon.html">soon</a></li>  
+                    </ul>
+                  </nav>
+                </div>
+                <div class="five columns sectionone">
+                    <h1><span class="italic">things i thought when my thoughts thought without me</span> is an ongoing, self-indulgent visual poetry anthology where i make sense of the angularity and noise.</h1>
+
+                    <h2 class="italic">with love to my visible & invisble allies. everything you are is hope to me.</h2>
+
+
+                    <h5 style="margin-top: 10%;">lauren holden is a writer & designer living in toronto, ontario.</h5>
+                    <h5>laurenholden.ca / info@laurenholden.ca</h5>
+
+                </div>
+
+                <div class="five columns sectiontwo">
+                    <h3><span class="italic">to make sense:</span></h3>
+
+                    <h4>Ontario Mental Health Helpline
+                        <br>1-866-531-2600</h4>
+                    <h4>Toronto Distress Centres 
+                        <br>(416) 408-4357 or 408-HELP</h4>
+                        <h4>You belong here. <br>If you are in crisis, call 911</h4>
+
+                    <h3>to feel known:</h3>
+                    <h4>
+                    The Bell Jar, Sylvia Plath
+                    <br>An Unquiet Mind, Kay Redfield Jamison
+                    <br>What My Hair Says About You, Laura Theobald
+                    <br>Milk and Honey, Rupi Kaur
+                    <br>So Sad Today, Melissa Broder
+                    <br>Reasons to Stay Alive, Matt Haig
+                    </h4>
+
+                    <h4 style="font-style: italic; font-size: 1.3em;">poetry, always poetry.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="warning">Please, turn your device sideways.</div>
+
+    <img class="u-full-width" style="position: fixed;height:100%;" alt="mountain range" src="../assets/soon/mountainclimber2.gif">
+    <a id="fade" class="next-white wow two columns offset-by-five above" href="../index.html" style=" top: 18000px;">next</a>
+    
+<div class="container">
+            <div id="trigger"></div>
+<div class="row">
+    <div id="slider-container" class="twelve columns">
+            <div id="slider">
+                <div id="imagesequence">
+                    <img id="myimg" alt="I will see myself again soon." src="../assets/soon/soon-01.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+            <script>
+                // define images
+                var images = [
+                    "../assets/soon/soon-01.svg",
+                    "../assets/soon/soon-02.svg",
+                    "../assets/soon/soon-03.svg",
+                    "../assets/soon/soon-04.svg",
+                    "../assets/soon/soon-05.svg",
+                    "../assets/soon/soon-07.svg",
+                    "../assets/soon/soon-08.svg",
+                    "../assets/soon/soon-09.svg",
+                    "../assets/soon/soon-10.svg",
+                    "../assets/soon/soon-11.svg",
+                    "../assets/soon/soon-12.svg",
+                    "../assets/soon/soon-13.svg",
+                    "../assets/soon/soon-14.svg",
+                    "../assets/soon/soon-15.svg",
+                    "../assets/soon/soon-16.svg",
+                    "../assets/soon/soon-17.svg",
+                    "../assets/soon/soon-18.svg",
+                    "../assets/soon/soon-19.svg",
+                    "../assets/soon/soon-20.svg",
+                    "../assets/soon/soon-21.svg",
+                    "../assets/soon/soon-22.svg",
+                    "../assets/soon/soon-23.svg",
+                    "../assets/soon/soon-24.svg",
+                    "../assets/soon/soon-25.svg",
+                    "../assets/soon/soon-26.svg",
+                    "../assets/soon/soon-27.svg",
+                    "../assets/soon/soon-28.svg",
+                    "../assets/soon/soon-29.svg",
+                    "../assets/soon/soon-30.svg",
+                    "../assets/soon/soon-31.svg",
+                    "../assets/soon/soon-32.svg",
+                    "../assets/soon/soon-34.svg",
+                    "../assets/soon/soon-35.svg",
+                    "../assets/soon/soon-36.svg",
+                    "../assets/soon/soon-37.svg",
+                    "../assets/soon/soon-38.svg",
+                    "../assets/soon/soon-39.svg",
+                    "../assets/soon/soon-40.svg",
+                    "../assets/soon/soon-41.svg",
+                    "../assets/soon/soon-42.svg",
+                    "../assets/soon/soon-43.svg",
+                    "../assets/soon/soon-44.svg",
+                    "../assets/soon/soon-45.svg",
+                    "../assets/soon/soon-46.svg",
+                    "../assets/soon/soon-47.svg",
+                    "../assets/soon/soon-48.svg",
+                    "../assets/soon/soon-49.svg",
+                    "../assets/soon/soon-50.svg",
+                    "../assets/soon/soon-51.svg",
+                    "../assets/soon/soon-52.svg"
+                ];
+
+                // TweenMax can tween any property of any object. We use this object to cycle through the array
+                var obj = {curImg: 0};
+
+                // create tween
+                var tween = TweenMax.to(obj, 1,
+                    {
+                        curImg: images.length - 1,	// animate propery curImg to number of images
+                        roundProps: "curImg",				// only integers so it can be used as an array index
+                        repeat: 0,									// repeat 3 times
+                        immediateRender: true,			// load first image automatically
+                        ease: Linear.easeInSine,			// show every image the same ammount of time
+                        onUpdate: function () {
+                          $("#myimg").attr("src", images[obj.curImg]); // set the image source
+                        }
+                    }
+                );
+
+                // init controller
+                var controller = new ScrollMagic.Controller();
+
+                // build scene
+                var scene = new ScrollMagic.Scene({triggerhook: "#trigger", duration: 11000})
+                                .setTween(tween)
+                                .addIndicators() // add indicators (requires plugin)
+                                .addTo(controller);
+
+                // handle form change
+                $("form.move input[name=duration]:radio").change(function () {
+                    scene.duration($(this).val());
+                });
+            </script>
+
+
+<!--New images on load -->
+
+<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script>
+    
+        $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+        
+    </script>
+</body>
+
+

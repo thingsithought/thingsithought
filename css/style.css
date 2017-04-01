@@ -1,0 +1,297 @@
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  width: 220px;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background: #eee;
+  box-shadow: 0 0 5px black;
+  transform: translate3d(0, 0, 0);
+  transition: transform .3s;
+}
+
+.content.isOpen {
+  transform: translate3d(220px, 0, 0);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:before {
+  content: '\f0c9';
+  font: 42px fontawesome;
+}
+
+/* Demo Navigation */
+
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 20px;
+  font-size: 12px;
+  color: black;
+}
+
+.nav li a:before {
+  font: 14px fontawesome;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+}
+
+.nav li:nth-child(1) a:before {
+  content: '\f00a';
+}
+
+.nav li:nth-child(2) a:before {
+  content: '\f012';
+}
+
+.nav li:nth-child(3) a:before {
+  content: '\f0e8';
+}
+
+.nav li:nth-child(4) a:before {
+  content: '\f0c3';
+}
+
+.nav li:nth-child(5) a:before {
+  content: '\f022';
+}
+
+.nav li:nth-child(6) a:before {
+  content: '\f115';
+}
+
+.nav li:nth-child(7) a:before {
+  content: '\f085';
+}
+
+.nav li:nth-child(8) a:before {
+  content: '\f023';
+  left: 23px;
+}
+
+.nav li a:hover {
+  background: #444;
+}
+
+.nav li a.active {
+  box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+  background: #444;
+}
+
+#block_land{position:absolute; top:0; left:0; text-align:center; background:white; width:100%; height:100%; display:none;}
+
+
+
+/* Demo Description */
+
+.container-nav p {
+  font-size: 20px;
+}
+.container-nav a {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.container-nav a:hover{
+    font-style: italic;
+    
+}
+.container-nav a:hover:after, .container a:focus:after, .container a:active:after {
+  width: 100%;
+}
+
+.button_container {
+  position: fixed;
+  top: 3%;
+  left: 1.5%;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+    z-index:99999;
+}
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+          transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: #FF5252;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index: 9999;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  -webkit-animation: fadeInRight .5s ease forwards;
+          animation: fadeInRight .5s ease forwards;
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: left;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+    margin-top: 2%;
+}
+.overlay ul li {
+  display: block;
+  height: 6%;
+  height: calc(100% / 4);
+  min-height: 3px;
+  position: relative;
+  opacity: 0;
+}
+
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.overlay ul li a:hover {
+ font-style: italic;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
