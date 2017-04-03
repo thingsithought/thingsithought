@@ -324,6 +324,37 @@ line-height: 1.2em;}
   100% { opacity: 0; }
 }
 
+#fadeend {
+  -webkit-animation: fadeend 2s linear 7s infinite; /* Safari 4+ */
+  -moz-animation:    fadeend 2s linear 7s infinite; /* Fx 5+ */
+  -o-animation:      fadeend 2s linear 7s infinite; /* Opera 12+ */
+  animation:         fadeend 2s linear 7s infinite; /* IE 10+, Fx 29+ */
+    opacity:0;
+}
+
+@-webkit-keyframes fadeend {
+  0%   { opacity: 0; }
+    33%  { opacity: 1; }
+    66% {opacity: 0;}
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeend {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes fadeend {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeend {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
 #fade-sound {
   -webkit-animation: fadeinouttwo 2s 3; /* Safari 4+ */
   -moz-animation:    fadeinouttwo 2s 3; /* Fx 5+ */
