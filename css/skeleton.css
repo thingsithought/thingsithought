@@ -356,6 +356,15 @@ line-height: 1.2em;}
     width: 600px;
 }
 
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid black;
+    margin-left: 49%;
+    
+}
 /* The Woodpecker
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

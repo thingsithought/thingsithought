@@ -97,7 +97,10 @@
     <div class="warning">Please, turn your device sideways.</div>
 
     <img class="u-full-width" style="position: fixed;height:100%;" alt="mountain range" src="../assets/soon/mountainclimber2.gif">
-    <a id="fade" class="next-white wow two columns offset-by-five above" href="../index.html" style=" top: 11900px;">next</a>
+  
+    <div class="button_container one column offset-by-five" id="toggletwo">
+        <div id="fade" class="next-white fadeIn center" style="position: absolute; top: 500px; margin-left: 50px;">end</div>
+    </div>
     
 <div class="container">
             <div id="trigger"></div>
@@ -205,6 +208,15 @@
     <script>
     
         $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+        
+    </script>
+    
+     <script>
+    
+        $('#toggletwo').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
   });
